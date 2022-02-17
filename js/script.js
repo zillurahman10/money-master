@@ -3,11 +3,11 @@
 document.getElementById('calculate-btn').addEventListener('click', function () {
     const totalExpenses = document.getElementById('total-expenses')
     const incomeInput = document.getElementById('income');
-    console.log(typeof incomeInput.value);
+    // console.log(typeof incomeInput.value);
     // alert for 
-    if (parseFloat(incomeInput.value) < 0 || typeof incomeInput.value == 'string') {
+    if (parseFloat(incomeInput.value) < 0) {
         alert("Please enter a valid number")
-        // console.log();
+        console.log(incomeInput.value);
     }
     else {
 
