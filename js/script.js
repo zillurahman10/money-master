@@ -3,8 +3,7 @@
 document.getElementById('calculate-btn').addEventListener('click', function () {
     const totalExpenses = document.getElementById('total-expenses')
     const incomeInput = document.getElementById('income');
-    // console.log(typeof incomeInput.value);
-    // alert for 
+    // alert
     if (parseFloat(incomeInput.value) < 0) {
         alert("Please enter a valid number")
         console.log(incomeInput.value);
