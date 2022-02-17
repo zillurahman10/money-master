@@ -35,7 +35,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 
 
 
-// save
+// save section
 document.getElementById('save-btn').addEventListener('click', function () {
     const saveInput = document.getElementById('save');
     if (parseFloat(save.value) < 0) {
