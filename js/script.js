@@ -39,14 +39,19 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 // save
 document.getElementById('save-btn').addEventListener('click', function () {
     const saveInput = document.getElementById('save');
-    const incomeInput = document.getElementById('income');
-    const savingAmountText = document.getElementById('savingAmount')
-    const savingAmount = parseFloat(savingAmountText.innertext)
-    const saving = incomeInput.value / saveInput.value
-    savingAmountText.innerText = saving;
+    if (parseFloat(save.value) < 0) {
+        alert("Please enter a valid number")
+    }
+    else {
+        const incomeInput = document.getElementById('income');
+        const savingAmountText = document.getElementById('savingAmount')
+        const savingAmount = parseFloat(savingAmountText.innertext)
+        const saving = incomeInput.value / saveInput.value
+        savingAmountText.innerText = saving;
 
-    // Remaining balance
-    const remainingBalance = document.getElementById('remaining-balance')
-    remainingBalance.innerText = balance.innerText - saving;
+        // Remaining balance
+        const remainingBalance = document.getElementById('remaining-balance')
+        remainingBalance.innerText = balance.innerText - saving;
+    }
 
 })
